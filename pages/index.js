@@ -1,15 +1,17 @@
 import Head from "next/head";
-
-import styles from "../styles/Home.module.css";
-
+import Form from "../components/Form";
+import Card from "../components/Card";
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Lesson1 Redux</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main></main>
+      <main className="w-screen min-h-screen flex flex-row bg-dark p-[10rem]">
+        <Form />
+        <Card />
+      </main>
     </div>
   );
 }
