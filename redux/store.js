@@ -1,9 +1,9 @@
-import userReducer from "./features/user";
+import movieReducer from "./features/movie";
 import { configureStore } from "@reduxjs/toolkit";
 
 const store = configureStore({
   reducer: {
-    user: userReducer,
+    movie: movieReducer,
   },
 });
 
