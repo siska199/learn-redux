@@ -1,11 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const userSlice = createSlice({
+const initialStateValue = []
+
+export const userSlice = createSlice({
   name: "user",
-  initialState: { value: { name: "", age: 0, email: "" } },
+  initialState: { value: initialStateValue },
   reducers: {
-    //Logic behind redux
+    addUser: (state, action) => {
+      state.value.push(action.payload);
+    },
   },
 });
 
-export default userSlice;
+export const { addUser } = userSlice.actions;
+export default userSlice.reducer;

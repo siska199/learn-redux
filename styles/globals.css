@@ -26,9 +26,9 @@ a {
     @apply border-2 w-full h-[3rem] bg-white   flex flex-col justify-end relative mb-3 rounded-[2rem]
   }
   .input{
-    @apply text-[0.9rem] h-[70%] text-black px-3 placeholder-shown:h-[100%] bg-white rounded-[2rem] outline-none
+    @apply text-[0.9rem] h-[70%] text-black px-3 placeholder-shown:h-[100%]  rounded-[2rem] outline-none
   }
   .label{
-    @apply  hidden absolute top-0 left-3 text-[0.85rem] text-gray-600 transition duration-1000 ease-linear
+    @apply  block absolute top-0 left-3 text-[0.85rem] text-gray-600 transition duration-1000 ease-linear
   }
 }
