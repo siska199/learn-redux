@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Redux</title>
+        <title>Redux Saga</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main></main>
